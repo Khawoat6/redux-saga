@@ -15,7 +15,7 @@ export default function sagaMiddlewareFactory(options = {}) {
     }
 
     if (is.notUndef(channel)) {
-      check(channel, is.channel(channel), 'options.channel passed to the Saga middleware is not a channel')
+      check(channel, is.channel, 'options.channel passed to the Saga middleware is not a channel')
     }
   }
 
